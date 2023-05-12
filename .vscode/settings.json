@@ -1,0 +1,6 @@
+{
+    "ecsstractor_port.comment_style": "css",
+    "ecsstractor_port.bem_nesting": true,
+    "ecsstractor_port.brackets": false,
+    "ecsstractor_port.element_separator": "__"
+}
