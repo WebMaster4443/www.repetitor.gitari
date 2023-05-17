@@ -1,25 +1,177 @@
-.container
+
+ .container
     max-width: 1140px
     margin: 0 auto
-    
+    position: relative
+
+//Peremennie
+$color_blue: #5290EA
+$color_orange: #F28B64
+$color_grey: #E2E2E2
+
+
 .main-section
     height: 800px
     background: #F0F0F0
+    padding-top: 16px 
+    position: relative
+    overflow: hidden
+
+    &__content-container
+        display: flex
 
     
+    &__nav-container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__first-elipse
+        position: absolute
+        top: 129px
+        right: 34px
+    &__second-elipse
+        position: absolute
+        top: 650px
+        right: -120px
+        
+.nav-menu
+    &__list
+       display: flex
+       gap:0 65px
+        
+    &__list-item a
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        color: #000000
+   
+.left-wrapper
+    position: relative
+    &__img
+        position: relative
+        z-index: 5
+    &__rectangle-blue
+        width: 565.95px
+        height: 220px
+        background: $color_blue
+        position: absolute
+        top: 150px
+        left: -50px
+        z-index: 2
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        transform: rotate(-64deg)
+    &__rectangle-orange
+        width: 618.43px
+        height: 220px
+        background: $color_orange
+        position: absolute
+        top: 160px
+        left: -30px
+        z-index: 3
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        transform: rotate(-50.81deg)
+    &__rectangle-grey
+        width: 608.97px
+        height: 220px
+        background: $color_grey
+        position: absolute
+        left: 55px
+        top: 160px
+        z-index: 1
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        transform: rotate(-36.15deg)
+   
+.right-wrapper
+    max-width: 372px
+    position: absolute 
+    top: 150px
+    right: 76px
 
+    .icons
+        display: flex
+        gap: 0 17px 
+        &__item
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 40px
+            height: 40px
+            border:  1px solid $color_blue
+            border-radius: 100px
+            background-color: #E5E5E5
+            font-size: 21px
+        &__item a 
+            color: black
+    &__text-box
+        max-width: 353px 
+        margin-bottom: 15px
+        position: relative
+        z-index: 2
+    &__title
+            font-size: 72px
+            color: #000000
+    &__text
+        font-family: 'Montserrat'
+        font-size: 16px
+        color: #000000
 
+    .title__hr
+        border: 1px solid #000000
+        width: 65px
+        margin-bottom: 20px
 
-    
+    .buttons
+        display: flex
+        justify-content: start
+        align-items: center
+        gap: 0 32px
+    &__icon-btn
+        display: flex
+        gap: 0 12px
+.buttons
+    &__main-btn
+        background: $color_orange
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        border: none
+        color: #fff
+        padding: 11px 24px
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 18px
+    &__text
+        font-family: 'Montserrat'
+        font-weight: 300
+        font-size: 16px
+     
+.elipse
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 194px
+    height: 194px
+    background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%) 
+    border-radius: 150px
+    &_big
+        width: 282px
+        height: 282px
+    &__subtrack
+        width: 129.33px
+        height: 129.33px
+        background: #F0F0F0
+        border-radius: 150px
+        &_big
+            width: 188px
+            height: 188px
+   
 
-
-    
-
-
-
-
-
-
-
-
+   
 
