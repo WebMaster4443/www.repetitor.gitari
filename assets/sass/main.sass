@@ -11,7 +11,7 @@ $color_grey: #E2E2E2
 
 
 .main-section
-    height: 800px
+    min-height: 800px
     background: #F0F0F0
     padding-top: 16px 
     position: relative
@@ -110,40 +110,45 @@ $color_grey: #E2E2E2
             font-size: 21px
         &__item a 
             color: black
-    &__text-box
-        max-width: 353px 
-        margin-bottom: 15px
-        position: relative
-        z-index: 2
-    &__title
-            font-size: 72px
-            color: #000000
     &__text
         font-family: 'Montserrat'
         font-size: 16px
         color: #000000
+        position: relative
+        z-index: 2
+        margin-bottom: 15px
+.title
+    font-size: 72px
+    color: #000000
+    position: relative
+    z-index: 2
+         
+.title__hr
+    border: 1px solid #000000
+    width: 65px
+    margin-bottom: 20px
 
-    .title__hr
-        border: 1px solid #000000
-        width: 65px
-        margin-bottom: 20px
 
-    .buttons
-        display: flex
-        justify-content: start
-        align-items: center
-        gap: 0 32px
+    &__img-icon
+        cursor: pointer
+
+.buttons
+    display: flex
+    justify-content: start
+    align-items: center
+    gap: 0 32px
     &__icon-btn
         display: flex
         gap: 0 12px
-.buttons
     &__main-btn
         background: $color_orange
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
         border-radius: 100px
         border: none
         color: #fff
-        padding: 11px 24px
+        width: 200px
+        min-height: 60px
+        line-height: 1.2
         font-family: 'Montserrat'
         font-weight: 600
         font-size: 18px
@@ -151,6 +156,7 @@ $color_grey: #E2E2E2
         font-family: 'Montserrat'
         font-weight: 300
         font-size: 16px
+            
      
 .elipse
     display: flex
@@ -173,5 +179,81 @@ $color_grey: #E2E2E2
             height: 188px
    
 
-   
+.second-section
+    min-height: 700px
+    &__container
+        padding: 32px 0 65px
+        position: relative
+    &__card-box
+        display: flex
+        justify-content: start
+        gap: 0 30px
+        flex-wrap: wrap
+        margin-bottom: 25px
+    &__first-elipse
+         position: absolute
+         top: 80px
+         right: -60px
+    &__second-elipse
+         position: absolute
+         top: 345px
+         left: -60px
+
+.cards-item
+    width: 360px
+    height: 360px
+    border-radius: 10px   
+    display: flex
+    align-items: flex-end
+    position: relative
+    margin-bottom: 15px
+    z-index: 6
+    &__img
+        height: 335px
+    &__text
+        width: 280px
+        font-size: 36px
+        text-align: center
+        transform: rotate(90deg)
+        position: absolute
+        top: 130px
+        right: -30px
+.cards-item:nth-child(1)
+    background: #E2E2E2
+
+.cards-item:nth-child(2)
+    background: #F28B64
+
+.cards-item:nth-child(3)
+    background: #5290EA
+
+.second-section
+    &__icon-box
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        gap: 0 60px
+        max-width: 1035px
+        margin: 0 auto
+    &__icon-item
+        display: inline-flex
+        align-items: center
+        gap: 0 20px
+        max-width: 225px
+        margin-bottom: 25px
+    &__img
+        width: 80px
+        height: 80px
+    &__text
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        color: #000000
+
+    &__icon-item span
+        font-size: 48px
+        font-weight: 600
+        line-height: 1.2
 
